@@ -1,1 +1,1 @@
-# notes_voice_web
+Notes Speech-to-Text Website using Pico Voice
