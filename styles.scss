@@ -1,9 +1,36 @@
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
+
 $primary-color: #f0ffff;
 
+h1 {
+  text-align: center;
+}
 .playStopBtn {
-  background: url() no-repeat;
+  @extend %fa-icon;
+  @extend .fas;
+  @extend .fa-5x;
+
+  &:before {
+    content: fa-content($fa-var-play-circle);
+  }
+
+  &:hover {
+    color: red;
+    &:before {
+      content: fa-content($fa-var-user);
+    }
+  }
+
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
 
 .notesLine {
   border-bottom: 2px solid black;
+  padding: 20px;
+  margin: 20px;
 }
